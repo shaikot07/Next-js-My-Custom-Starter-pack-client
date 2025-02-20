@@ -38,7 +38,6 @@ export const middleware = async (request: NextRequest) => {
   return NextResponse.redirect(new URL("/", request.url));
 };
 
-// deceloper not: akhane j route gula  private hbe sei gula dite hbe nicer config ar vitore?  
 export const config = {
   matcher: [
     "/login",
