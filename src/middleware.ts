@@ -38,6 +38,7 @@ export const middleware = async (request: NextRequest) => {
   return NextResponse.redirect(new URL("/", request.url));
 };
 
+// config ar vitore bole dite hobe je kon route e jabe je user ta 
 export const config = {
   matcher: [
     "/login",
