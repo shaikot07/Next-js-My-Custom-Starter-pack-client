@@ -34,6 +34,7 @@ export default function RegisterForm() {
   const router = useRouter();
 
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
+    console.log(data);
     try {
       const res = await registerUser(data);
       if (res?.success) {
